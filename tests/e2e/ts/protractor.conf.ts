@@ -12,7 +12,10 @@ export const config: Config = {
     capabilities: {
         'browserName': 'chrome',
         chromeOptions:{
-            // args: ["--headless", "--disable-gpu", "--window-size=1920x1080", "--log-level=1"]
+            args: [
+                // "--headless", "--disable-gpu", "--window-size=1920x1080", "--log-level=1",
+                "--start-maximized"
+            ]
             },
         shardTestFiles: true,
         maxInstances: 4,
