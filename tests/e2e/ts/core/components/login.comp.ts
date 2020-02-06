@@ -9,4 +9,7 @@ export class LoginComp {
         element(login.getCampoSenha()).sendKeys(senha);
         element(login.getBtnLogin()).click();
     }
+    public retornaBotaoHome(){
+        return element(login.getBtnHome());
+    }
 }

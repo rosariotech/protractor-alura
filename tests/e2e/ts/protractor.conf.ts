@@ -13,12 +13,12 @@ export const config: Config = {
         'browserName': 'chrome',
         chromeOptions:{
             args: [
-                // "--headless", "--disable-gpu", "--window-size=1920x1080", "--log-level=1",
+                "--headless", "--disable-gpu", "--window-size=1920x1080", "--log-level=1",
                 "--start-maximized"
             ]
             },
         shardTestFiles: true,
-        maxInstances: 4,
+        maxInstances: 2,
     },
     directConnect: true,
 

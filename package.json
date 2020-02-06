@@ -7,7 +7,7 @@
     "build": "ng build",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "instalateste": "webdriver-manager update --chrom",
+    "instalateste": "webdriver-manager update --versions.chrome 79.0.3945.130",
     "pretest": "tsc -p tsconfig.e2e.json",
     "test": "protractor tests/e2e/js/protractor.conf.js || npm run posttest",
     "posttest": "allure generate tests/e2e/allure-results --clean -o c:/report-e2e/allure-report/alurapic"
