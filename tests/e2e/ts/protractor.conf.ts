@@ -1,4 +1,4 @@
-import { Config } from 'protractor';
+import { Config, by } from 'protractor';
 import { SpecReporter} from 'jasmine-spec-reporter';
 import { JasmineAllureReporter, AllureRuntime, AllureConfig, } from 'jasmine-allure2-reporter';
 
@@ -65,5 +65,8 @@ export const config: Config = {
                 enabled: true
             }
         }))
+        by.addLocator('formControlName', (controlName:string) => {
+            return document.querySelector(`[formControlName=${controlName}]`);
+        })
     },   
 };

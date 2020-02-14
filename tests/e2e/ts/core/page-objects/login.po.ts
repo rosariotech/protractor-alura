@@ -1,8 +1,8 @@
 import { by } from 'protractor';
 
 export class PaginaLogin {
-    private campoLogin = by.css('[formControlName="userName"]');
-    private campoSenha = by.css('[formControlName="password"]');
+    private campoLogin = by.formControlName('userName');
+    private campoSenha = by.formControlName('password');
     private btnLogin = by.buttonText('login');
     private btnHome = by.className('fa-home');
 
